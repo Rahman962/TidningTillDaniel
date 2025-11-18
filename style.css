@@ -5,13 +5,44 @@
 :root {
     --main-color: cadetblue;
     --side-color: floralwhite;
+    --secondary-color: rgb(67, 115, 117);
 }
 
 body {
     background-color: var(--main-color);
     margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+     font-weight: 200;
+     font-style: normal;
+}
+
+.HejDaniel-Container {
+    border: var(--secondary-color) 5px solid;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    background-color: var(--secondary-color);
 }
 
 .HejDaniel {
     color:var(--side-color);
+    margin: auto;
+    max-width: 50rem;
+    text-align: center;
 }
+
+.HejDaniel span:hover {
+    animation: rainbow 5s infinite;
+    font-weight: 400;
+}
+
+    @keyframes rainbow {
+      0%   { color: #FF0000; } 
+      14%  { color: #FF7F00; } 
+      28%  { color: #FFFF00; } 
+      42%  { color: #00FF00; } 
+      57%  { color: #0000FF; } 
+      71%  { color: #4B0082; } 
+      85%  { color: #8B00FF; } 
+      100% { color: #FF0000; } 
+    }
