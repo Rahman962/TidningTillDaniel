@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: cadetblue;
+    --side-color: floralwhite;
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0;
+}
+
+.HejDaniel {
+    color:var(--side-color);
+}
